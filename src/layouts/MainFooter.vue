@@ -1,10 +1,12 @@
 <template>
-    <div>Single Theme</div>
+    <footer>
+        Footer
+    </footer>
 </template>
 
 <script>
     export default {
-        name: "Theme"
+        name: "MainFooter"
     }
 </script>
 

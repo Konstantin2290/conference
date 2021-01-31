@@ -1,8 +1,8 @@
 import VueRouter from 'vue-router'
 
-import Home from '../pages/Home';
-import AllThemes from "../pages/AllThemes";
-import Theme from "../pages/Theme";
+import Home from '../pages/Home/Home';
+import AllThemes from "../pages/AllThemes/AllThemes";
+import Theme from "../pages/Theme/Theme";
 import NotFound from "../pages/NotFound";
 
 

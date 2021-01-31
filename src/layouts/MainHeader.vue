@@ -1,12 +1,12 @@
 <template>
-    <div>
-        Themes
-    </div>
+    <header>
+        Header
+    </header>
 </template>
 
 <script>
     export default {
-        name: "AllThemes"
+        name: "MainHeader"
     }
 </script>
 
