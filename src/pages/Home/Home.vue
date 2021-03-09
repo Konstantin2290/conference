@@ -4,7 +4,16 @@
             <MainHeader/>
         </template>
         <template v-slot:content>
-            <div>Home</div>
+            <div class="my-content">
+                <h1>Best for your corporate <br>communication</h1>
+                <b-button class="button" href="#">LET'S START</b-button>
+                <!-- <b-jumbotron>
+                    <h1>Best for your corporate <br>communication</h1>
+                    
+                    
+                    
+                </b-jumbotron> -->
+            </div>
         </template>
         <template v-slot:footer>
             <MainFooter/>
@@ -21,11 +30,43 @@
         components: {
             BaseLayout,
             MainHeader,
-            MainFooter
+            MainFooter,
         }
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+    .my-content {
+        margin: auto;
+        background-image: url(../../assets/images/fon.jpg);
+        background-size: cover;
+        height: 100vh;
+        text-align: center;
+        padding-top: 8%;
+        h1{
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-size: 10vh;
+            text-shadow: 6px 4px 3px  rgb(48, 48, 48);
+            margin-bottom: 5%;
+        }
+        .button {
+                background-color: rgb(255, 255, 0);
+                font-size: 6vh;
+                font-weight:bold;
+                margin-right: 2%;
+                padding: 15px 25px;
+                color: rgb(48, 48, 48);
+                border: none;
+                border-radius:10px;
+                box-shadow: 30px 37px 22px -9px  rgb(48, 48, 48);
+                transform: skew(-15deg);
+                transition: all 0.5s ease-out;
+            }
+        .button:hover {
+            position: relative;
+            transform: scale(1.2);
+        }
+        }          
 
 </style>
