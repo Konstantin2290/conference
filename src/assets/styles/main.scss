@@ -12,7 +12,6 @@ body{
   width: 100%;
 }
 header{
-  background-color: rgb(56,57,59);
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: auto;
@@ -35,4 +34,5 @@ footer{
   text-align: center;
 }
 
-@import "header/header.scss"
+@import "header/header.scss";
+@import "animations/modal";
