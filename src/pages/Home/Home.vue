@@ -7,12 +7,6 @@
             <div class="my-content">
                 <h1>Best for your corporate <br>communication</h1>
                 <b-button class="button" href="#">LET'S START</b-button>
-                <!-- <b-jumbotron>
-                    <h1>Best for your corporate <br>communication</h1>
-                    
-                    
-                    
-                </b-jumbotron> -->
             </div>
         </template>
         <template v-slot:footer>
@@ -40,7 +34,7 @@
         margin: auto;
         background-image: url(../../assets/images/fon.jpg);
         background-size: cover;
-        height: 100vh;
+        height: 100%;
         text-align: center;
         padding-top: 8%;
         h1{

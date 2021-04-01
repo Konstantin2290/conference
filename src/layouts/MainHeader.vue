@@ -13,14 +13,14 @@
                     <input type="text">
                     <button type="submit">Search</button>
                 </form>
-                <a class="btn-login" href="#" @click="openModal">Login</a>
+                <a class="btn-login" href="#" @click="openLogin">Login</a>
             </div>
         </div>
         <login
         v-if="isLoginOpen"
-        title="Пользовательское соглашение"
         @close="isLoginOpen = false"
         />
+
     </header>
 </template>
 
