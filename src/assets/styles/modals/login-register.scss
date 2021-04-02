@@ -39,6 +39,21 @@
   }
   &-title{
     color: #212329;
+    display: flex;
+    & .form-selector{
+      display: block;
+      font-size: 1.1rem;
+      color:rgb(22,188,153);
+    }
+    & .form-selector:hover{
+      text-decoration: none;
+    }
+    & .form-selector:nth-child(1){
+      margin-right: 1rem;
+    }
+    & .form-selector.active{
+      border-bottom: 2px solid rgb(22,188,153);
+    }
   }
   &-footer{
     width: 100%;

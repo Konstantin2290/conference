@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="header-wrap">
-            <a class="logo" href="#">
+            <a class="logo" href="/">
                 <img :src=" require('../assets/images/logo_2.png')" alt="CompanyLogo">
                 <h1>company<span>Forum</span></h1>
             </a>
@@ -13,7 +13,7 @@
                     <input type="text">
                     <button type="submit">Search</button>
                 </form>
-                <a class="btn-login" href="#" @click="openLogin">Login</a>
+                <a class="btn-login" href="#" @click="openLogin">User</a>
             </div>
         </div>
         <login
@@ -26,6 +26,7 @@
 
 <script>
 import Login from "../components/LoginModal"
+// import router from ""
     export default {
         name: "MainHeader",
         components: {
@@ -35,7 +36,8 @@ import Login from "../components/LoginModal"
             return {
                 opened: true,
                 width: 0,
-                isLoginOpen: false
+                isLoginOpen: false,
+                user: false
             }
         },
         methods: {
@@ -52,7 +54,11 @@ import Login from "../components/LoginModal"
                 this.displayByWidth();
             },
             openLogin() {
-                this.isLoginOpen = true;
+                if(this.user){
+                    this.$router.push({path: "/account"})
+                }else{
+                    this.isLoginOpen = true;
+                }
             }
 
         },
