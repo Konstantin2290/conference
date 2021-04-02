@@ -13,7 +13,7 @@
                     <input type="text">
                     <button type="submit">Search</button>
                 </form>
-                <a class="btn-login" href="#" @click="openLogin">User</a>
+                <a class="btn-login" href="#" @click.prevent="openLogin">User</a>
             </div>
         </div>
         <login
@@ -26,7 +26,6 @@
 
 <script>
 import Login from "../components/LoginModal"
-// import router from ""
     export default {
         name: "MainHeader",
         components: {
