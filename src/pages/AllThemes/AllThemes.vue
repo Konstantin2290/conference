@@ -78,6 +78,11 @@
     import MainFooter from "../../layouts/MainFooter";
     export default {
         name: "AllThemes",
+        data() {
+            return {
+                text: ''
+            }
+        },
         components: {
             BaseLayout,
             MainHeader,
