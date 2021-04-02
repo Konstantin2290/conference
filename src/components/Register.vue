@@ -27,9 +27,6 @@
                 @blur="$v.pass.$touch()"
                 :class="{'is-invalid': $v.pass.$error}"
         >
-        <div class="invalid-feedback" v-if="!$v.pass.required">
-            Пожалуйста, укажите пароль
-        </div>
         <div class="invalid-feedback" v-if="!$v.pass.minLength">
             Не менее {{$v.pass.$params.minLength.min}} символов
         </div>
