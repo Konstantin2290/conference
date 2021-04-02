@@ -6,6 +6,8 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import './assets/styles/main.scss'
 import VueRouter from 'vue-router'
 import router from './router/index'
+import Vuelidate from 'vuelidate'
+Vue.use(Vuelidate);
 
 Vue.use(VueRouter)
 Vue.use(BootstrapVue)
