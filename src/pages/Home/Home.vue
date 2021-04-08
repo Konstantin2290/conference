@@ -6,7 +6,7 @@
         <template v-slot:content>
             <div class="my-content">
                 <h1>Best for your corporate <br>communication</h1>
-                <b-button class="button" href="#">LET'S START</b-button>
+                <b-button class="button" href="/themes">LET'S START</b-button>
             </div>
         </template>
         <template v-slot:footer>
@@ -43,6 +43,11 @@
             font-size: 10vh;
             text-shadow: 6px 4px 3px  rgb(48, 48, 48);
             margin-bottom: 5%;
+            @media screen and (max-width: 500px){
+                font-size: 2rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
         }
         .button {
                 background-color: rgb(255, 255, 0);

@@ -10,7 +10,7 @@
                     <b-card class="card_theme">
                         <b-row>
                         <b-col md="2">
-                            <img src="../../assets/images/avatar_from_theme.png" alt="Image" class="card-img">
+                            <img src="../../assets/images/avatar_from_theme.png" alt="Image" class="card-img card-main-theme">
                         </b-col>
                         <b-col md="10">
                             <b-card-text>
@@ -146,8 +146,8 @@
     background-attachment: fixed;
     width: 100%;
 	height: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 50px;
+    padding-bottom: 50px;
     .container {
         background-color: rgba(255, 255, 255, 0.8);
         border-radius: 10px;
@@ -164,6 +164,12 @@
                 text-align: right;
             }
         }
+        .card-main-theme{
+            @media screen and (max-width: 768px){
+                width: 80px;
+                height: 80px;
+            }
+        }
         // Сообщение пользователей
         .card_message {
             background-color: rgba(240, 240, 240, 0.6);
@@ -176,6 +182,10 @@
                 .card-img {
                     width: 100%;
                     border-radius: 50%;
+                    @media screen and (max-width: 768px){
+                        width: 100px;
+                        height: 100px;
+                    }
                 }
             }
             .added_text {

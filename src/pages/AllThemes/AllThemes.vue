@@ -96,9 +96,8 @@
         background-image: url(../../assets/images/fon_2.jpg);
         background-size: cover;
         background-attachment: fixed;
-        height: 100vh;
-        padding-top: 5%;
-        padding-bottom: 25%;
+        padding-top: 50px;
+        padding-bottom: 50px;
         
         .input_theme {
             margin-bottom: 5%;
@@ -107,8 +106,13 @@
             background-color: rgba(241,241,241,0.8);
             padding: 0;
             border-radius: 0;
+            margin-bottom: 10px;
             .card-img {
                 border-radius: 50%;
+                @media screen and (max-width:768px){
+                    width: 100px;
+                    height: 100px;
+                }
             }
             .card-link {
                 color: rgb(54, 54, 54);
